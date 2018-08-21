@@ -9,8 +9,53 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Hoja de estilos personalizada -->
+        <link rel="stylesheet" href="Style.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- Archivo js para la logica-->
+        <script src="lclasica.js"></script>
     </head>
     <body>
-        <div>Juego IA</div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <h1>Juego de Roles</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <div class="panel panel-default consola" style="max-height: 10;" id="panel" >
+                        
+                        <!-- Fila en la que se muestra los mensajes al usuario -->
+                        <p id="mensajes">Bienvenido al juego!! </p>
+
+                        <!-- Fila en la que se habilita el ingreso de infromacion-->
+                        <label>Por favor ingrese su nickname:</label>
+                        <input type="text" style="border:none" id="nickname">
+                        <button onclick="guardarnickname()" id="nick">Ingresar</button>
+
+
+                    </div> 
+                </div>
+            </div>
+        </div>
+<!--        
+<input type='radio' id='5min' name='despertar' value="Duerme 5 minutos mas" /><label for='5min'>A. Duerme 5 minutos mas</label><br>
+<input type='radio' id='bano' name='despertar' value="Se entra a bañar"/><label for='bano'>B. Se entra a bañar</label><br>
+<input type='radio' id='dormir' name='despertar' value="Deside quedarse durmiendo toda la mañana"/><label for='dormir'>C. Deside quedarse durmiendo toda la mañana</label><br>
+-->
     </body>
 </html>

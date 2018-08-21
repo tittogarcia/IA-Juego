@@ -1,0 +1,16 @@
+.consola{
+    background-color: black;
+    border-style: solid;
+}
+
+p {
+    color: white; 
+}
+input{
+    background-color: black;
+    color: white;  
+}
+
+label{
+    color: white; 
+}
