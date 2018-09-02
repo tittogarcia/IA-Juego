@@ -98,6 +98,7 @@ function preg9() {
 
 function preg10() {
     $("#panel").append("<br><p> - No hizo nada en el resto del día más allá de estar un poco adolorido de tanto descansar. Finaliza el día y se reinicia todo nuevamente.</p>");
+    $("#panel").append("<input type='radio' id='10a' name='p10' value='10a' /><label for='10a'>Finalizar juego</label><br>");
 	deshabilitar_RadioButton();
     ;
 }
@@ -112,6 +113,7 @@ function preg11() {
 
 function preg12() {
     $("#panel").append("<br><p> - Caminó todo el día sin rumbo fijo, no encontró ninguna tarea ni ningún objetivo en el día, se dirige a su apartamento a finalizar el día a espera que se reinicie todo nuevamente.</p>");
+    $("#panel").append("<input type='radio' id='12a' name='p12' value='12a' /><label for='12a'>Finalizar juego</label><br>");
     deshabilitar_RadioButton();
     
 }
@@ -293,9 +295,9 @@ function calculo_habilidadesPersonales(res,pregunta){
             resolucionConflictos-=1;
         break;
         default:
-            alert('No coincide ningun caso');
+            //alert('No coincide ningun caso');
     }
-    alert('la pregunta es:'+pregunta);
+    //alert('la pregunta es:'+pregunta);
     if (pregunta=='p7' || pregunta=='p10' || pregunta=='p12') mostrarResutadotest();
 }
 
