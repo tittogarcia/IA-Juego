@@ -1,16 +1,27 @@
 .consola{
-    background-color: black;
+    background-color: #67b3af;
     border-style: solid;
 }
 
-p {
-    color: white; 
+p,th,td {
+    color: #abccb1;
+    font-family: "Arvo Bold",Times,serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 input{
-    background-color: black;
-    color: white;  
+    background-color: #33CEFF;
+    color: red; 
+    opacity: 0.5;
+    font-weight: bold;
 }
 
 label{
-    color: white; 
+    color: #abccb1;
+    
+}
+
+h1{
+    color:black;
+    font-family: "Arvo Bold",Times,serif;
 }
